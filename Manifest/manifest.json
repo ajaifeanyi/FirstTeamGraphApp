@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "showLoadingIndicator": true,
+  "isFullScreen": true,
+  "id": "acc9b6d9-c3ec-4320-ad0a-114ac918d850",
+  "packageName": "com.teams.devapp",
+  "developer": {
+    "name": "Reliance Infosystems Limited",
+    "websiteUrl": "https://reliance.systems.com/",
+    "privacyUrl": "https://reliance.systems.com/Privacy",
+    "termsOfUseUrl": "https://reliance.systems.com/Terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Team Graph App",
+    "full": "Team Graph App to get Calendar"
+  },
+  "description": {
+    "short": "Team Graph App",
+    "full": "Team Graph App"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://c7bd-102-89-44-88.eu.ngrok.io",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingDetailsTab",
+        "meetingChatTab"
+      ],
+      "supportedSharePointHosts": [
+        "sharePointFullPage"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "createEventTab",
+      "name": "Create event",
+      "contentUrl": "https://c7bd-102-89-44-88.eu.ngrok.io",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "calendarTab",
+      "name": "Graph calendar",
+      "contentUrl": "https://c7bd-102-89-44-88.eu.ngrok.io",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "c7bd-102-89-44-88.eu.ngrok.io"
+  ],
+  "webApplicationInfo": {
+    "id": "54f33160-ddb0-4d79-91e9-5c779a2d6038",
+    "resource": "api://c7bd-102-89-44-88.eu.ngrok.io/54f33160-ddb0-4d79-91e9-5c779a2d6038"
+  }
+}
